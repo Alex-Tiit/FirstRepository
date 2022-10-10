@@ -20,3 +20,4 @@ int main()
   fill_with_squares(begin(squares), end(squares));
   print_array(begin(squares), end(squares));
 }
+// Попросили внести изменения
