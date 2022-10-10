@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iterator>
+using namespace std;
+ 
+void fill_with_squares(float* begin, float* end)
+{
+  for (size_t i = 0; i != end - begin; ++i)
+    begin[i] = i * i;
+}
+
+void print_array(float* begin, float* end)
+{
+  while (begin != end)
+    cout << *begin++ << '\n';
+}
+ 
+int main()
+{
+  float squares[100];
+  fill_with_squares(begin(squares), end(squares));
+  print_array(begin(squares), end(squares));
+}
